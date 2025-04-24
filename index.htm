@@ -1,177 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Min Stora Hemsida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Välkommen till Min Hemsida</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="om.html">Om oss</a></li>
+        <li><a href="tjanster.html">Tjänster</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Nyheter</h2>
+      <p>Senaste uppdateringarna på vår webbplats.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Min Hemsida</p>
+  </footer>
+</body>
+</html>
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-header {
+    background-color: #f0f0f0;
+  }
+  
+  header {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 24px;
-}
-nav {
-    background-color: #222;
-    padding: 10px;
-    text-align: center;
-}
-nav a {
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  
+  nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-}
-nav a:hover {
-    background-color: #555;
-}
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-    text-align: center;
-}
-.player {
-    margin: 20px 0;
-    padding: 10px;
-    border-bottom: 2px solid #ddd;
-}
-img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-2. Startsidans HTML (index.html)
-html
-Kopiera
-Redigera
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotbollsspelare</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  }
+  <button onclick="visaMeddelande()">Klicka här</button>
 
-    <header>Fotbollsstjärnor</header>
-    
-    <nav>
-        <a href="index.html">Hem</a>
-        <a href="players.html">Spelare</a>
-        <a href="about.html">Om oss</a>
-    </nav>
-
-    <div class="container">
-        <h2>Välkommen till Fotbollsstjärnor</h2>
-        <p>Här hittar du information om världens bästa fotbollsspelare.</p>
-        <img src="images/football.jpg" alt="Fotboll">
-    </div>
-
-</body>
-</html>
-html
-Kopiera
-Redigera
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spelare</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>Fotbollsstjärnor</header>
-    
-    <nav>
-        <a href="index.html">Hem</a>
-        <a href="players.html">Spelare</a>
-        <a href="about.html">Om oss</a>
-    </nav>
-
-    <div class="container">
-        <h2>Världens bästa fotbollsspelare</h2>
-
-        <div class="player">
-            <h3><a href="messi.html">Lionel Messi</a></h3>
-            <img src="images/messi.jpg" alt="Lionel Messi">
-        </div>
-
-        <div class="player">
-            <h3><a href="ronaldo.html">Cristiano Ronaldo</a></h3>
-            <img src="images/ronaldo.jpg" alt="Cristiano Ronaldo">
-        </div>
-
-        <div class="player">
-            <h3><a href="neymar.html">Neymar Jr.</a></h3>
-            <img src="images/neymar.jpg" alt="Neymar">
-        </div>
-
-    </div>
-
-</body>
-</html>
-html
-Kopiera
-Redigera
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lionel Messi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>Fotbollsstjärnor</header>
-    
-    <nav>
-        <a href="index.html">Hem</a>
-        <a href="players.html">Spelare</a>
-        <a href="about.html">Om oss</a>
-    </nav>
-
-    <div class="container">
-        <h2>Lionel Messi</h2>
-        <img src="images/messi.jpg" alt="Lionel Messi">
-        <p>Messi är en av världens största fotbollsspelare genom tiderna. Han har vunnit flera Ballon d'Or och är känd för sin teknik, snabbhet och målfarlighet.</p>
-        <a href="players.html">Tillbaka till spelare</a>
-    </div>
-
-</body>
-</html>
-html
-Kopiera
-Redigera
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om oss</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>Fotbollsstjärnor</header>
-    
-    <nav>
-        <a href="index.html">Hem</a>
-        <a href="players.html">Spelare</a>
-        <a href="about.html">Om oss</a>
-    </nav>
-
-    <div class="container">
-        <h2>Om oss</h2>
-        <p>Vi älskar fotboll och vill dela med oss av information om de bästa spelarna genom tiderna.</p>
-    </div>
-
-</body>
-</html>
+  <script>
+    function visaMeddelande() {
+      alert("Hej och välkommen!");
+    }
+  </script>
+       
